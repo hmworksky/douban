@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/douban.iml" filepath="$PROJECT_DIR$/.idea/douban.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mxshop/.idea/mxshop.iml" filepath="$PROJECT_DIR$/../mxshop/.idea/mxshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mywork/.idea/mywork.iml" filepath="$PROJECT_DIR$/../mywork/.idea/mywork.iml" />
+      <module fileurl="file://E:/download/online-store/.idea/online-store.iml" filepath="E:/download/online-store/.idea/online-store.iml" />
+    </modules>
+  </component>
+</project>
