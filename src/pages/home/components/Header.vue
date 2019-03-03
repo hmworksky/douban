@@ -8,7 +8,7 @@
       输入游玩\乐园\主题
     </div>
     <div class="header-right">
-      城市
+      {{this.city}}
       <span class="iconfont">&#xe652;</span>
     </div>
   </div>
@@ -16,7 +16,11 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: {
+    city: String
+  },
+
 }
 </script>
 

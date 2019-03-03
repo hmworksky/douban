@@ -2,12 +2,12 @@
     <div>
       <div class="title">热销推荐</div>
       <ul>
-        <li class="item border-bottom" v-for="item of itemList" :key="item.id">
-          <img class="item-image" :src="item.itemUrl"/>
+        <li class="item border-bottom" v-for="item of list" :key="item.id">
+          <img class="item-image" :src="item.imgUrl"/>
           <div class="item-info">
-            <p class="item-title" v-text="item.itemTitle"></p>
-            <p class="item-desc" v-text="item.itemDesc"></p>
-            <button class="item-button" v-text="item.itemButtonName"></button>
+            <p class="item-title" v-text="item.title"></p>
+            <p class="item-desc" v-text="item.desc"></p>
+            <button class="item-button">查看详情</button>
           </div>
         </li>
       </ul>
@@ -17,32 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      itemList: [
-        {
-          id: '0001',
-          itemUrl: 'http://img1.qunarzz.com/sight/p0/1812/b9/b9cc3ab2fbe4f0e7a3.img.jpg_250x250_5ff88af1.jpg',
-          itemTitle: '大连海洋博物馆',
-          itemDesc: '浪漫大连首站',
-          itemButtonName: '查看详情'
-        },
-        {
-          id: '0002',
-          itemUrl: 'http://img1.qunarzz.com/sight/p0/1812/b9/b9cc3ab2fbe4f0e7a3.img.jpg_250x250_5ff88af1.jpg',
-          itemTitle: '大连海洋博物馆',
-          itemDesc: '浪漫大连首站',
-          itemButtonName: '查看详情'
-        },
-        {
-          id: '0003',
-          itemUrl: 'http://img1.qunarzz.com/sight/p0/1812/b9/b9cc3ab2fbe4f0e7a3.img.jpg_250x250_5ff88af1.jpg',
-          itemTitle: '大连海洋博物馆',
-          itemDesc: '浪漫大连首站',
-          itemButtonName: '查看详情'
-        }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
