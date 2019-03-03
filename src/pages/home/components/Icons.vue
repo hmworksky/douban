@@ -77,5 +77,4 @@ export default {
         height: 100%
         margin: 0 auto
 
-
 </style>

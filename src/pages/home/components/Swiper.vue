@@ -26,10 +26,10 @@ export default {
       swiperOption: {
         pagination: '.swiper-pagination', // 分页配置
         loop: true // 支持轮播
-      },
+      }
     }
   },
-  computed:{
+  computed: {
     showSwiper () {
       return this.list.length
     }

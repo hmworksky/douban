@@ -7,10 +7,12 @@
       <span class="iconfont">&#xe61b;</span>
       输入游玩\乐园\主题
     </div>
-    <div class="header-right">
-      {{this.city}}
-      <span class="iconfont">&#xe652;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{this.city}}
+        <span class="iconfont">&#xe652;</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -19,8 +21,7 @@ export default {
   name: 'Header',
   props: {
     city: String
-  },
-
+  }
 }
 </script>
 
@@ -29,7 +30,7 @@ export default {
   .header-home
     display: flex
     background : $bgColor
-    line-height: .86rem
+    line-height: $headerHeight
     .header-left
       width: .64rem
       float: left
@@ -39,6 +40,7 @@ export default {
       width: 1.24rem
       float: right
       text-align: center
+      color: #ffffff
     .header-input
       padding-left: .2rem
       margin-left: .2rem
